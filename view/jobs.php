@@ -24,6 +24,9 @@
                                         <th>Title</th>
                                         <th>Company</th>
                                         <th>Category</th>
+                                        <th>Seasonal</th>
+                                        <th>Position</th>
+                                        <th>Paid</th>
                                         <th>Location</th>
                                         <th>Date Posted</th>
                                         <th>Expires</th>
@@ -38,6 +41,9 @@
                                             <td>{{ @job['job_title'] }}</td>
                                             <td>{{ @job['company_name'] }}</td>
                                             <td>{{ @job['catagory'] }}</td>
+                                            <td>{{ @job['seasonal'] }}</td>
+                                            <td>{{ @job['position'] }}</td>
+                                            <td>{{ @job['paid'] }}</td>
                                             <td>{{ @job['location'] }}</td>
                                             <td>{{ @job['date'] }}</td>
                                             <td>{{ @job['expire'] }}</td>
@@ -52,6 +58,9 @@
                                         <th>Title</th>
                                         <th>Company</th>
                                         <th>Category</th>
+                                        <th>Seasonal</th>
+                                        <th>Position</th>
+                                        <th>Paid</th>
                                         <th>Location</th>
                                         <th>Date Posted</th>
                                         <th>Expires</th>
@@ -64,6 +73,9 @@
                                             <td>{{ @job['job_title'] }}</td>
                                             <td>{{ @job['company_name'] }}</td>
                                             <td>{{ @job['catagory'] }}</td>
+                                            <td>{{ @job['seasonal'] }}</td>
+                                            <td>{{ @job['position'] }}</td>
+                                            <td>{{ @job['paid'] }}</td>
                                             <td>{{ @job['location'] }}</td>
                                             <td>{{ @job['date'] }}</td>
                                             <td>{{ @job['expire'] }}</td></a>

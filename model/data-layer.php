@@ -63,7 +63,7 @@
           public function getAllJobs()
           {
 
-              $select = "SELECT job_number, job_title, company_name, catagory, location, job_description, DATE_FORMAT(post_date,'%b %d, %Y') AS date, DATE_FORMAT(expiration,'%b %d, %Y') AS expire, url_link FROM job_table
+              $select = "SELECT job_number, job_title, company_name, catagory, seasonal, position, paid, location, job_description, DATE_FORMAT(post_date,'%b %d, %Y') AS date, DATE_FORMAT(expiration,'%b %d, %Y') AS expire, url_link FROM job_table
                                WHERE visibility=1";
 
               $statement = $this->_pdo->prepare($select);
@@ -242,7 +242,8 @@
               
               return $statement->execute();
           }
-          
+
+          //what does this do????-------------------------------------------------------------------
           public function updateJob($data) //This needs to reflect naturalresourcesjobs.greenrivertech.net (can be called updateJob)
           {
                 $statement = 'UPDATE job_table SET job_title=:job_title, company_name=:company_name, catagory=:catagory, location=:location,

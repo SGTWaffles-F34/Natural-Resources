@@ -38,7 +38,7 @@
 
 	 <header>
 		 <?php
-		 		include '../include/child-header.php'
+         include '../include/child-header.php'
 		  ?>
 	 </header>
 

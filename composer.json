@@ -1,0 +1,15 @@
+{
+  "name": "jgonzale/SDEV/NaturalResources",
+  "authors": [
+    {
+      "name": "Jazmin Gonzalez",
+      "email": "gonzalez.jazmin@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  },
+  "autoload": {
+    "classmap": [ "model/", "controller/"]
+  }
+}

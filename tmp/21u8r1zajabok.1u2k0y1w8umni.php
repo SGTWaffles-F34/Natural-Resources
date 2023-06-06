@@ -15,8 +15,8 @@
             <span class="contrast">12401 Southeast 320th Street<br>Auburn, WA 98092</span></a>
         </p>
     </div>
-    <!-- Social Media Buttons and Icons -->
-    <div class="row col-md-3 col-sm-12 social-media">
+    <!-- Social Media Buttons and Icons commented for time being -->
+    <!--<div class="row col-md-3 col-sm-12 social-media">
         <h5>Follow us on:</h5>
         <div class="Social-Media">
             <a class="icons" href="https://www.facebook.com/" target="_blank">
@@ -29,19 +29,19 @@
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
         </div>
-    </div>
+    </div>-->
     <!-- login on footer nav bar -->
     <div class="row col-md-3 col-sm-12">
         <ul class="nav navbar-nav navbar-right log-border">
             <li>
-                <check if="{{ isset($_SESSION['logged']) }}">
-                    <true>
-                        <a href="{{ @BASE }}/logout" target="_self">Logout</a></li>
-                    </true>
-                    <false>
-                        <a href="{{ @BASE }}/login" target="_self">Admin Login</a></li>
-                    </false>
-                </check>
+                <?php if (isset($_SESSION['logged'])): ?>
+                    
+                        <a href="<?= ($BASE) ?>/logout" target="_self">Logout</a></li>
+                    
+                    <?php else: ?>
+                        <a href="<?= ($BASE) ?>/login" target="_self">Admin Login</a></li>
+                    
+                <?php endif; ?>
         </ul>
     </div>
 </div>
