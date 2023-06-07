@@ -242,6 +242,18 @@
               
               return $statement->execute();
           }
+           //used to delete all expired entries in database
+          function deleteExpired()
+            {
+                //1. Define the query
+                $sql = "DELETE FROM job_table WHERE expiration < CURDATE();";
+
+                //2. Prepare the statement
+                $statement = $this->_dbh->prepare($sql);
+
+                //3. Execute the query
+                return $statement->execute();
+            }
 
           //what does this do????-------------------------------------------------------------------
           public function updateJob($data) //This needs to reflect naturalresourcesjobs.greenrivertech.net (can be called updateJob)
